@@ -36,3 +36,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### npm i next-auth
+### npm install formik --save
+### npm install react-icons --save
+### npm i aos
+### npm i bcryptjs
+### npm i react-fast-marquee
+### npm i react-parallax
+### npm install react-scroll-parallax
+### npm i @smastrom/react-rating

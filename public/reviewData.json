@@ -1,0 +1,83 @@
+[
+    {
+      "reviewerName": "Alice Johnson",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "Agile Web Development with Rails",
+      "ratings": 4.5,
+      "review": "This book is a comprehensive guide to web development with Rails. It covers all the essential concepts and provides practical examples. Highly recommended!",
+      "date": "2023-08-01"
+    },
+    {
+      "reviewerName": "Bob Smith",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "Flask Web Development",
+      "ratings": 4.0,
+      "review": "A good introduction to Flask and web development in Python. The examples are clear, and the author explains things well.",
+      "date": "2023-07-25"
+    },
+    {
+      "reviewerName": "Charlie Brown",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "Agile web development with rails: a Pragmatic guide",
+      "ratings": 4.2,
+      "review": "This book is a must-have for anyone learning Rails. It's well-written and covers everything you need to know to build web applications with Rails.",
+      "date": "2023-07-20"
+    },
+    {
+      "reviewerName": "David Miller",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "CakePHP Application Development",
+      "ratings": 3.8,
+      "review": "The book is decent, but it could use some better editing. There are typos and grammatical errors throughout. The content is useful, though.",
+      "date": "2023-07-15"
+    },
+    {
+      "reviewerName": "Ella Davis",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "Alex Homer, ASP.NET 2.0 Visual Web Developer 2005",
+      "ratings": 4.0,
+      "review": "A good starting point for learning ASP.NET. The examples are helpful, and it covers the basics well.",
+      "date": "2023-07-10"
+    },
+    {
+      "reviewerName": "Frank Wilson",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "PHP Oracle Web Development",
+      "ratings": 4.3,
+      "review": "I found this book very informative. It's a great resource for those looking to work with PHP and Oracle. The integration examples were helpful.",
+      "date": "2023-07-05"
+    },
+    {
+      "reviewerName": "Grace Lee",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "WordPress for Web Developers: An Introduction for Web Professionals",
+      "ratings": 4.7,
+      "review": "As a web developer, this book provided valuable insights into using WordPress for more professional projects. Highly recommended for those new to WordPress.",
+      "date": "2023-07-01"
+    },
+    {
+      "reviewerName": "Henry Clark",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "MODx Web Development",
+      "ratings": 3.5,
+      "review": "The book gives an introduction to MODx, but it's somewhat outdated in terminology. It could benefit from a more up-to-date edition.",
+      "date": "2023-06-25"
+    },
+    {
+      "reviewerName": "Isabella White",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "Grok 1.0 Web Development",
+      "ratings": 4.0,
+      "review": "This book does a great job of introducing Grok and test-driven development. It's a valuable resource for web developers.",
+      "date": "2023-06-20"
+    },
+    {
+      "reviewerName": "Jack Turner",
+      "reviewerImage": "https://i.ibb.co/RCqnCdk/login.jpg",
+      "bookName": "Professional JavaScript for Web Developers",
+      "ratings": 4.8,
+      "review": "An excellent book for JavaScript developers looking to deepen their knowledge. It covers important topics in great detail.",
+      "date": "2023-06-15"
+    }
+  ]
+  
