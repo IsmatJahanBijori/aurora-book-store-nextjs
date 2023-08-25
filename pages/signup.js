@@ -4,14 +4,15 @@ import Link from 'next/link'
 // import Image from 'next/image'
 import { useFormik } from 'formik'
 import { FaEye, FaEyeSlash, FaMailBulk, FaUserAlt } from 'react-icons/fa'
-import login_validate from '@/components/Validate'
+import signup_validate from '@/components/Validate'
+import { useRouter } from 'next/router'
 
 
 const Signup = () => {
     async function handleGoogle() {
         signIn('google', { callbackUrl: "http://localhost:3000" })
     }
-
+    const router = useRouter()
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -19,14 +20,25 @@ const Signup = () => {
             password: '',
             confirmPassword: ''
         },
-        validate:login_validate,
+        validate: signup_validate,
         onSubmit
     });
 
     const [showPassword, setShowPassword] = useState(false);
 
     async function onSubmit(values) {
-        console.log(values)
+        // console.log(values)
+        const options = {
+            method: "POST",
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify(values)
+        }
+
+        await fetch('http://localhost:3000/api/auth/signup', options).then(res => res.json()).then((data)=>{
+            if(data){
+                router.push('http://localhost:3000')
+            }
+        })
     }
 
     return (
@@ -91,12 +103,12 @@ const Signup = () => {
 
                         {/* Signup*/}
                         <div className="form-control mt-6 w-1/3">
-                            <button className="btn btn-primary">Signup</button>
+                            <button type='button' className="btn btn-primary">Signup</button>
                         </div>
 
                         {/*Google */}
                         <div className="form-control mt-6 w-fit">
-                            <button onClick={handleGoogle} className="btn btn-primary">Google Login</button>
+                            <button type='button' onClick={handleGoogle} className="btn btn-primary">Google Login</button>
                         </div>
                     </div>
                     <div className='m-5'>

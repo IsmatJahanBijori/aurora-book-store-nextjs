@@ -4,7 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
     const { data: session } = useSession()
-    console.log(session)
+    // console.log(session)
 
     function handleSignOut() {
         signOut()
@@ -18,9 +18,9 @@ const Navbar = () => {
                 </Link>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
                     <Link href="/" className="mr-5 hover:text-black font-bold">Home</Link>
-                    <Link href="/" className="mr-5 hover:text-black font-bold">Product</Link>
-                    <Link href="/" className="mr-5 hover:text-black font-bold">About Us</Link>
-                    <Link href="/" className="mr-5 hover:text-black font-bold">Contact Us</Link>
+                    <Link href="/product" className="mr-5 hover:text-black font-bold">Product</Link>
+                    <Link href="/about" className="mr-5 hover:text-black font-bold">About Us</Link>
+                    <Link href="/contact" className="mr-5 hover:text-black font-bold">Contact Us</Link>
                 </nav>
                 {
                     session ? <div>Signed in as {session.user.email} <br />

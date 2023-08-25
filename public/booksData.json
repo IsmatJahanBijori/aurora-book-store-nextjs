@@ -191,7 +191,7 @@
       "edition": "1",
       "language": "en",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, animi. Deserunt eius ad autem, eaque suscipit itaque explicabo odit eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, animi. Deserunt eius ad autem, eaque suscipit itaque explicabo odit eum.",
-      "cover": "http://libgen.org/covers/626000/854bbdc8d5895e7e5de6a260d9ca1745-d.jpg",
+      "cover": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FData-Structures-Algorithms-Introduction-Intelligence-ebook%2Fdp%2FB07CY6DCW8&psig=AOvVaw3izKdt_2m9H0Y4ZL4Ww2pf&ust=1693044470206000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDM7qTI94ADFQAAAAAdAAAAABAE",
       "price":120,
       "stock":10
     },
@@ -249,8 +249,8 @@
     },
     {
       "id": "826704",
-      "title": "Agile.Web.Development.with.Rails.4th.Edition",
-      "author": "the pragmatic programmers",
+      "title": "Agile Web Development",
+      "author": "Simon Collison",
       "categories": "web programming",
       "year": "2003",
       "edition": "6th",
@@ -423,7 +423,7 @@
       "edition": "1",
       "language": "en",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, animi. Deserunt eius ad autem, eaque suscipit itaque explicabo odit eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, animi. Deserunt eius ad autem, eaque suscipit itaque explicabo odit eum.",
-      "cover": "http://libgen.org/covers/626000/854bbdc8d5895e7e5de6a260d9ca1745-d.jpg",
+      "cover": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FData-Structures-Algorithms-Introduction-Intelligence-ebook%2Fdp%2FB07CY6DCW8&psig=AOvVaw3izKdt_2m9H0Y4ZL4Ww2pf&ust=1693044470206000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDM7qTI94ADFQAAAAAdAAAAABAE",
       "price":120,
       "stock":10
     },
@@ -462,7 +462,7 @@
       "edition": "11th",
       "language": "en",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, animi. Deserunt eius ad autem, eaque suscipit itaque explicabo odit eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, animi. Deserunt eius ad autem, eaque suscipit itaque explicabo odit eum.",
-      "cover": "http://ars.els-cdn.com/content/image/3-s2.0-B9781928994565X50002-cov150h.gif",
+      "cover": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FData-Structures-Algorithms-Introduction-Intelligence-ebook%2Fdp%2FB07CY6DCW8&psig=AOvVaw3izKdt_2m9H0Y4ZL4Ww2pf&ust=1693044470206000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDM7qTI94ADFQAAAAAdAAAAABAE",
       "price":120,
       "stock":10
     },
@@ -546,7 +546,7 @@
     },
     {
       "id": "643560",
-      "title": "Web Design for Developers: A Programmer's Guide to Design Tools and Techniques (The Pragmatic Programmers)",
+      "title": "Web Design for Developers: A Programmer's Guide to Design Tools and Techniques",
       "author": "Brian P. Hogan",
       "categories": "Computer Science/Web/Web Design",
       "year": "2009",
@@ -559,7 +559,7 @@
     },
     {
       "id": "2284255",
-      "title": "PHPEclipse: A User Guide: Take advantage of the leading open source integrated development environment to develop, organize, and debug your PHP web development projects.",
+      "title": "PHP web development projects.",
       "author": "Shu-Wai Chow",
       "categories": "Knowledge Engineering",
       "year": "2006",

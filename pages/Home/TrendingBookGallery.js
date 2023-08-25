@@ -25,11 +25,11 @@ const TrendingBookGallery = () => {
                         books.map(book =>
                             <div className="hero ">
                                 <div className="hero-content flex-col lg:flex-row">
-                                    <img src={book.cover} className="max-w-sm rounded-lg shadow-2xl" />
+                                    <img src={book.cover} className="w-[300px] rounded-lg shadow-2xl" />
                                     <div>
-                                        <h1 className="text-5xl font-bold">{book.author}</h1>
-                                        <p className="py-2">{book.title}</p>
-                                        <p className="py-2">{book.price}</p>
+                                        <h1 className="text-3xl font-bold">{book.author}</h1>
+                                        <p className="py-2 text-lg">{book.title}</p>
+                                        <p className="py-2 text-lg">{book.price}</p>
                                         <button className="btn btn-primary">Buy Now</button>
                                     </div>
                                 </div>
