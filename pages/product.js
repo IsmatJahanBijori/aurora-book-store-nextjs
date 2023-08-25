@@ -1,28 +1,35 @@
+import ProductCard from '@/components/ProductCard'
 import React, { useEffect, useState } from 'react'
-
+// import styles from "../styles/Product.module.css"
 const Product = () => {
   const [productData, setProductData] = useState([])
+
   useEffect(() => {
     fetch("booksData.json").then(res => res.json()).then(data => setProductData(data))
   }, [])
+
+  const [visibleProducts, setVisibleProducts] = useState(6);
+
+  const loadMore = () => {
+    setVisibleProducts(visibleProducts + 6);
+  };
   return (
     <section className="text-gray-600">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap -m-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-3 ">
           {
-            productData.map(product =>
-              <div className="lg:w-1/4 md:w-1/2 p-4 w-full gap-5 card shadow-2xl m-5">
-                <a className="block relative h-48 rounded overflow-hidden">
-                  <img alt="Book" className="object-cover object-center w-full h-full block" src={product.cover} />
-                </a>
-                <div className="mt-4 h-[200px]">
-                  <h3 className="text-gray-500 text-lg tracking-widest title-font mb-1">{product.title}</h3>
-                  <h2 className="text-gray-900 title-font text-lg font-medium">{product.author}</h2>
-                  <p className="mt-1">$ {product.price}</p>
-                </div>
-              </div>)
-
+            productData.slice(0, visibleProducts).map((product, index) =>
+              <ProductCard product={product}/>
+            )
           }
+          {visibleProducts < productData.length && (
+            <div className="text-center mt-8">
+              <button
+                onClick={loadMore}
+                className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+              >Load More</button>
+            </div>
+          )}
         </div>
       </div>
     </section>
@@ -30,3 +37,5 @@ const Product = () => {
 }
 
 export default Product
+
+
