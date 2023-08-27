@@ -46,3 +46,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### npm i react-parallax
 ### npm install react-scroll-parallax
 ### npm i @smastrom/react-rating
+### npm install react-icons --save
