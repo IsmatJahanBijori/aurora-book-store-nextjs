@@ -10,11 +10,9 @@ const TrendingBookGallery = () => {
     // const webBook=books.filter(book=>book.categories==="Web Development")
     useEffect(() => {
         fetch("booksData.json").then(res => res.json()).then(data => setBooks(data.filter(dt => dt.categories === "Web development")))
-        AOS.init({
-            duration: 500
-        })
+        
     }, [])
-
+    
 
     return (
         <section className="text-gray-600 font-serif">
@@ -25,9 +23,9 @@ const TrendingBookGallery = () => {
                         books.map(book =>
                             <div className="hero ">
                                 <div className="hero-content flex-col lg:flex-row">
-                                    <img src={book.cover} className="w-[300px] rounded-lg shadow-2xl" />
-                                    <div>
-                                        <h1 className="text-3xl font-bold">{book.author}</h1>
+                                    <img src={book.cover} className="w-[150px] md:w-[300px] rounded-lg shadow-2xl" />
+                                    <div className='w-[300px] md:w-[400px] lg:w-[600px]'>
+                                        <h1 className="text-3xl font-bold text-center md:text-start">{book.author}</h1>
                                         <p className="py-2 text-lg">{book.title}</p>
                                         <p className="py-2 text-lg">{book.price}</p>
                                         <button className="btn btn-primary">Buy Now</button>

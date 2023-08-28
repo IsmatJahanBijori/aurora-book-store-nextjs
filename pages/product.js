@@ -13,13 +13,14 @@ const Product = () => {
   const loadMore = () => {
     setVisibleProducts(visibleProducts + 6);
   };
+ 
   return (
     <section className="text-gray-600">
       <div className="container px-5 py-24 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-3 ">
           {
             productData.slice(0, visibleProducts).map((product, index) =>
-              <ProductCard product={product}/>
+              <ProductCard product={product} />
             )
           }
           {visibleProducts < productData.length && (
