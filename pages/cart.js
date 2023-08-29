@@ -1,13 +1,13 @@
+import CartTable from '../components/CartTable'
 import React from 'react'
-
-const dashboard = () => {
+//TODO: static Dashboard
+const Cart = () => {
 
     return (
         <main class="relative h-screen overflow-hidden bg-gray-100  rounded-2xl">
             <div class="flex items-start justify-between">
-                <div class="relative h-screen my-4 ml-4 shadow-lg block w-80">
+                <div class="relative h-screen my-4 ml-4 shadow-lg w-[300px]">
                     <div class="h-full rounded-2xl bg-[#BEADFA]">
-
                         <nav class="mt-6">
                             <a class="flex items-center justify-start w-full p-4 my-2  text-blue-500 font-semibold uppercase transition-colors duration-200 border-r-4 border-blue-500 bg-[#BEADFA] " href="#">
 
@@ -25,7 +25,8 @@ const dashboard = () => {
                     </div>
                 </div>
                 <div class="flex flex-col w-full pl-0 md:p-4 md:space-y-4">
-                    <p className='text-white'>hello</p>
+                    {/*<p className='text-black'>hello</p>*/}
+                    <CartTable/>
                 </div>
             </div>
         </main>
@@ -33,7 +34,7 @@ const dashboard = () => {
 
 }
 
-export default dashboard
+export default Cart
 
 //extra links
 

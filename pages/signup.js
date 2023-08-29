@@ -4,7 +4,7 @@ import Link from 'next/link'
 // import Image from 'next/image'
 import { useFormik } from 'formik'
 import { FaEye, FaEyeSlash, FaMailBulk, FaUserAlt } from 'react-icons/fa'
-import signup_validate from '@/components/Validate'
+import signup_validate from '../components/Validate'
 import { useRouter } from 'next/router'
 
 

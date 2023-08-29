@@ -1,26 +1,37 @@
 import ProductCard from '@/components/ProductCard'
+// import { add } from '../redux/CartSlice'
+import mongoose from "mongoose";
 import React, { useEffect, useState } from 'react'
-// import styles from "../styles/Product.module.css"
-const Product = () => {
-  const [productData, setProductData] = useState([])
+// import { useDispatch } from 'react-redux'
+import Product from "../model/Product";
 
-  useEffect(() => {
-    fetch("booksData.json").then(res => res.json()).then(data => setProductData(data))
-  }, [])
+
+const ProductInfo = ({ productData }) => {
+  // const [productData, setProductData] = useState([])
+  // const count = useSelector((state) => state.counter.value)
+  // const dispatch = useDispatch()
+
+  // useEffect(() => {
+  //   fetch("booksData.json").then(res => res.json()).then(data => setProductData(data))
+  // }, [])
 
   const [visibleProducts, setVisibleProducts] = useState(6);
 
   const loadMore = () => {
     setVisibleProducts(visibleProducts + 6);
   };
- 
+
+  // const handleBuyNow = (product) => {
+  //   dispatch(add(product))
+  // }
+  // handleBuyNow={handleBuyNow}
   return (
     <section className="text-gray-600">
       <div className="container px-5 py-24 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-3 ">
           {
             productData.slice(0, visibleProducts).map((product, index) =>
-              <ProductCard product={product} />
+              <ProductCard product={product} key={index} />
             )
           }
           {visibleProducts < productData.length && (
@@ -37,6 +48,21 @@ const Product = () => {
   )
 }
 
-export default Product
+
+export async function getServerSideProps(context) {
+  // Fetch data from external API
+
+  // res.status(200).json({ products })
+  if (!mongoose.connections[0].readyState) {
+    await mongoose.connect(process.env.MONGO_URI)
+  }
+  let productData = await Product.find()
+  // Pass data to the page via props
+  return { props: { productData: JSON.parse(JSON.stringify(productData)) } }
+}
 
 
+export default ProductInfo
+
+
+// let productData = await Product.find({category:"Web development"})

@@ -30,7 +30,7 @@ const Login = () => {
             redirect: false,
             email: values.email,
             password: values.password,
-            callbackUrl: "/"
+            callbackUrl: "http://localhost:3000"
         })
         // console.log(status)
         if (status.ok) {

@@ -12,7 +12,7 @@
 // }
 
 // export default connectMongo;
-
+//handler => async (req, res)
 import mongoose from "mongoose";
 
 const connectDB = handler => async (req, res) => {
